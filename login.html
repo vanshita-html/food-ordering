@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foodeat - Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .login-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+      background: linear-gradient(to right, #fff5f5, #ffece6);
+      padding: 50px 20px;
+    }
+
+    .login-box {
+      background: #fff5f5;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ff4d4d;
+      font-size: 28px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0 20px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .login-box input:focus {
+      border-color: #ff4d4d;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .login-box button:hover {
+      background-color: #e64040;
+      transform: translateY(-3px) scale(1.02);
+    }
+
+    .login-box .extra-links {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .login-box .extra-links a {
+      color: #ff4d4d;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    .login-box .extra-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Foodeat</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="booking.html">Booking</a>
+    </nav>
+  </header>
+
+  <!-- Login Section -->
+  <section class="login-section">
+    <div class="login-box">
+      <h2>Login to Foodeat</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+      <div class="extra-links">
+        <p>Don't have an account?<a href="register.html">Register</a></p>
+        <p><a href="#">Forgot Password?</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Foodeat. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

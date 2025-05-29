@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodeat - Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fffdf6;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6f61;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: white;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .menu-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .menu-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #ff6f61;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .menu-card {
+      width: 250px;
+      background-color: #fff0e6;
+      border-radius: 15px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .menu-card h3 {
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .menu-card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .menu-card .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #ff6f61;
+    }
+
+    footer {
+      background-color: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .menu-card {
+        width: 90%;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Foodeat</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-card">
+        <img src="https://product-assets.faasos.io/eatsure/production/veg-cheese-burst-pizza.jpeg" alt="Pizza">
+        <h3>Cheese Burst Pizza</h3>
+        <p>Loaded with cheese and toppings</p>
+        <div class="price">₹120</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://www.justspices.co.uk/media/recipe/Egg-Fried-Noodles_Just-Spices.webp" alt="Noodles">
+        <h3>Hakka Noodles</h3>
+        <p>Spicy & tangy street-style noodles</p>
+        <div class="price">₹90</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://www.yummyfoodrecipes.com/resources/picture/org/Tasty-Chocolate-Ice-Cream.jpg" alt="Ice Cream">
+        <h3>Chocolate Ice Cream</h3>
+        <p>Rich and creamy choco delight</p>
+        <div class="price">₹89</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://b.zmtcdn.com/data/pictures/chains/6/18664896/4e0c0bafb3fe233938991cf1af655e79.jpg" alt="Burger">
+        <h3>Veggie Burger</h3>
+        <p>Crunchy patty with soft buns</p>
+        <div class="price">₹129</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://static.toiimg.com/photo/54659021.cms" alt="Fries">
+        <h3>French Fries</h3>
+        <p>Crispy golden potato fries</p>
+        <div class="price">₹69</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://www.whiskaffair.com/wp-content/uploads/2020/09/Veg-Cutlet-2-3.jpg" alt="Cutlet">
+        <h3>Cutlet</h3>
+        <p>Crispy with fresh veggies</p>
+        <div class="price">₹80</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/02/01171428/YFL-Pav-Bhaji-3.jpg" alt="Pav bhaji">
+        <h3>Pav Bhaji</h3>
+        <p>Include butter, chopped onions, and lemon wedges.</p>
+        <div class="price">₹85</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHu-vEn4T3y8SSfgMjXyP64CZl8DXjSt5yhw&s" alt="Dosa">
+        <h3>Dosa</h3>
+        <p>Special South-indian with fresh chutney's</p>
+        <div class="price">₹50</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://www.squarecut.net/wp-content/uploads/2024/08/pani-puri-snack-alchemy_1170794-90851.jpg" alt="Pani-puri">
+        <h3>Pani-puri</h3>
+        <p>Sweet & spicy with amazing flavours</p>
+        <div class="price">₹35</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://www.cookwithmanali.com/wp-content/uploads/2015/07/Restaurant-Style-Recipe-Paneer-Tikka-500x500.jpg" alt="Paneer-tikka">
+        <h3>Paneer tikka</h3>
+        <p>Fresh-tossed paneer</p>
+        <div class="price">₹100</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://www.yummyfoodrecipes.com/resources/picture/org/Khaman-Dhokla.jpg" alt="Dhokla">
+        <h3>Dhokla</h3>
+        <p>Steamed savory cake made from gram flour.</p>
+        <div class="price">₹50</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://spicecravings.com/wp-content/uploads/2020/12/Paneer-kathi-Roll-Featured-1.jpg" alt="Veg roll">
+        <h3>Veg roll</h3>
+        <p>Fresh-tossed paneer</p>
+        <div class="price">₹95</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://www.pillsbury.in/wp-content/uploads/2023/11/Recipe.jpg" alt="Momos">
+        <h3>Momos</h3>
+        <p>Different varieties of momos with spicy chuteny's</p>
+        <div class="price">₹75</div>
+      </div>
+      <div class="menu-card">
+        <img src="https://sinfullyspicy.com/wp-content/uploads/2023/03/1-1.jpg" alt="Aloo Tikki Chaat ">
+        <h3>Aloo Tikki Chaat </h3>
+        <p>Fresh-tossed paneer</p>
+        <div class="price">₹40</div>
+      </div>
+  <div class="menu-card">
+    <img src="https://c.ndtvimg.com/2023-03/0m65kep_samosa_625x300_10_March_23.jpg" alt="samosa">
+    <h3>Samosa</h3>
+    <p>Fried pastry with spicy potato/peas filling.</p>
+    <div class="price">₹30</div>
+</div>
+<div class="menu-card">
+  <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2024/02/chicken-kathi-roll-chicken-frankie.jpg" alt="Kathi roll">
+  <h3>Kathi roll </h3>
+  <p>Fresh-tossed paneer</p>
+  <div class="price">₹100</div>
+</div>
+<div class="menu-card">
+  <img src="https://ministryofcurry.com/wp-content/uploads/2024/06/vada-pav-3.jpg" alt="Vada pav ">
+  <h3>Vada pav</h3>
+  <p>Mumbai’s spicy potato fritter burger.</p>
+  <div class="price">₹40</div>
+</div>
+<div class="menu-card">
+  <img src="https://www.veggiesdontbite.com/wp-content/uploads/2020/05/vegan-veggie-sushi-rolls-FI.jpg" alt="Veg sushi ">
+  <h3>Veg sushi</h3>
+  <p>Rolled rice with cucumber, avocado, and carrots.</p>
+  <div class="price">₹180</div>
+</div>
+<div class="menu-card">
+  <img src="https://www.whiskaffair.com/wp-content/uploads/2014/07/Palak-Paneer-2-1.jpg" alt="palak paneer ">
+  <h3>Palak panner </h3>
+  <p>Creamy spinach curry with soft paneer cubes.</p>
+  <div class="price">₹240</div>
+</div>
+<div class="menu-card">
+  <img src="https://www.veganosity.com/wp-content/uploads/2020/03/Balsamic-Tacos-5.jpg" alt="Veg tacos">
+  <h3>Veg tacos </h3>
+  <p>Crispy shells filled with beans, veggies, cheese.</p>
+  <div class="price">₹110</div>
+</div>
+<div class="menu-card">
+  <img src="https://atanurrannagharrecipe.com/wp-content/uploads/2023/04/Chicken-Schezwan-Fried-Rice.jpg" alt=" Schezwan Fried Rice">
+  <h3>Schezwan Fried Rice </h3>
+  <p>Spicy Indo-Chinese style rice with vegetables</p>
+  <div class="price">₹105</div>
+</div>
+<div class="menu-card">
+  <img src="https://ministryofcurry.com/wp-content/uploads/2024/05/dabeli-5.jpg" alt="Dabeli">
+  <h3>Dabeli</h3>
+  <p>Kutchi-style spicy potato burger with pomegranate</p>
+  <div class="price">₹40</div>
+</div>
+<div class="menu-card">
+  <img src="https://i.pinimg.com/736x/80/3f/f0/803ff029867e021b7b4193f58e1c4ad1.jpg" alt="chole bhature ">
+  <h3>Chole bhature</h3>
+  <p>Spicy chickpeas with fluffy deep-fried bread.</p>
+  <div class="price">₹85</div>
+</div>
+</div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Foodeat. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
