@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodeat - Delicious Delivered</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero-img {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      animation: float 3s infinite ease-in-out;
+    }
+
+    .section-title {
+      font-size: 30px;
+      text-align: center;
+      margin: 60px 0 30px;
+      color: #ff4d4d;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 0 30px;
+    }
+
+    .feedback {
+      background: #fff5f5;
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    .feedback-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      padding: 20px;
+      max-width: 300px;
+      margin: 15px auto;
+    }
+
+    .feedback-card p {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .feedback-card h4 {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Foodeat</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="booking.html">Booking</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="position: relative;">
+    <div class="hero-content">
+      <h1>Delicious Food Delivered To You</h1>
+      <p>Craving something yummy? We've got you covered!</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+    <img src="https://assets.zenn.com/strapi_assets/food_logo_5fbb88038c.png" alt="Foodeat Logo" class="hero-img" />
+  </section>
+
+  <!-- Popular Dishes -->
+  <section class="features">
+    <h2 class="section-title">Popular Dishes</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://ooni.com/cdn/shop/articles/20220211142347-margherita-9920_ba86be55-674e-4f35-8094-2067ab41a671.jpg" alt="Pizza" />
+        <h3>Cheese Pizza</h3>
+        <p>Melting cheese with fresh toppings.</p>
+      </div>
+      <div class="card">
+        <img src="https://www.justspices.co.uk/media/recipe/Egg-Fried-Noodles_Just-Spices.webp" alt="Noodles" />
+        <h3>Veg Noodles</h3>
+        <p>Spicy, tangy and full of flavors.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/02/01171428/YFL-Pav-Bhaji-3.jpg" alt="Pav Bhaji" />
+        <h3>Pav bhaji</h3>
+        <p>Include butter, chopped onions, and lemon wedges.</p>
+      </div>
+    </div>
+    <div> <br><br><br><br> </div>
+    <div class="cards">
+      <div class="card">
+        <img src="https://www.whiskaffair.com/wp-content/uploads/2020/09/Veg-Cutlet-2-3.jpg" alt="cutlet" />
+        <h3>Cutlet</h3>
+        <p>combination of mashed potatoes, chillies and spices.</p>
+      </div>
+      <div class="card">
+        <img src="https://t3.ftcdn.net/jpg/05/53/98/34/360_F_553983488_7DiA25QCxeYx2wjz8Bh3j85JbUc7Zuej.jpg" alt="chole bhature" />
+        <h3>Chhole bhature</h3>
+        <p>A deep-fried bread made from maida.</p>
+      </div>
+      <div class="card">
+        <img src="https://s.lightorangebean.com/media/20240914160809/Spicy-Penne-Pasta_-done.png" alt="Pasta" />
+        <h3>Pasta</h3>
+        <p>Cool and creamy delight.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Restaurants -->
+  <section class="features">
+    <h2 class="section-title">Top Rated Restaurants</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://blog.rotacloud.com/content/images/2022/08/tony-lee-8IKf54pc3qk-unsplash-1.jpg" alt="The Spice Lounge" />
+        <h3>The Spice Lounge</h3>
+        <p>Authentic Indian food with modern vibes.</p>
+      </div>
+      <div class="card">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/d7/58/ca/coffee-berry.jpg?w=900&h=500&s=1" alt="Burger Bros" />
+        <h3>Burger Bros</h3>
+        <p>Big bites, bold flavors, better burgers.</p>
+      </div>
+      <div class="card">
+        <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/12/25082438/Nagpur8.jpg" alt="Taste Haven" />
+        <h3>Taste Haven</h3>
+        <p>Multi-cuisine meals crafted to perfection.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Desserts -->
+  <section class="features">
+    <h2 class="section-title">Best in Desserts</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://media.cnn.com/api/v1/images/stellar/prod/181127110351-18-50-sweets-travel-tiramisu.jpg?q=w_2391,h_1345,x_0,y_0,c_fill" alt="Chocolate Mousse" />
+        <h3>Tiramisu</h3>
+        <p>Light, fluffy and chocolaty!</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVN3mT7s7rG5QkZhdzex3qJAUNQe5wqL-U-w&s" alt="Ice Cream Cake" />
+        <h3>Ice Cream Cake</h3>
+        <p>Best of both worlds - cake & cream!</p>
+      </div>
+      <div class="card">
+        <img src="https://www.timeoutriyadh.com/cloud/timeoutriyadh/2024/09/11/Best-Desserts-in-Riyadh-Sucre-LEAD.jpg" alt="Strawberry Shortcake" />
+        <h3>Strawberry Shortcake</h3>
+        <p>Fresh berries & whipped cream heaven.</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="cards">
+      <div class="card">
+        <img src="https://img.taste.com.au/nGjAovK2/taste/2016/11/layered-chocolate-mousse-cakes-101268-1.jpeg" alt="Chocolate Mousse" />
+        <h3>Chocolate Mousse</h3>
+        <p>Light, fluffy and chocolaty!</p>
+      </div>
+      <div class="card">
+        <img src="https://www.cookingclassy.com/wp-content/uploads/2019/11/cheesecake-8.jpg" alt="Cheese Cake" />
+        <h3>Cheesecake</h3>
+        <p>Best of both worlds - cake & cream!</p>
+      </div>
+      <div class="card">
+        <img src="https://qeleg.com/cdn/shop/articles/20240411054015-peach-mochi.webp?v=1712814467" alt="Mochi" />
+        <h3>Mochi</h3>
+        <p>Best from Japan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback -->
+  <section class="feedback">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <div class="cards">
+      <div class="feedback-card">
+        <p>"Foodeat is my go-to! Always fast & fresh!"</p>
+        <h4>- Aarya K.</h4>
+      </div>
+      <div class="feedback-card">
+        <p>"Love the variety and user-friendly website."</p>
+        <h4>- Rohan M.</h4>
+      </div>
+      <div class="feedback-card">
+        <p>"Desserts are divine! Especially the mousse."</p>
+        <h4>- Sneha P.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Foodeat. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
