@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodeat - About Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #ff6f61;
+      margin-bottom: 30px;
+    }
+
+    .about-text {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      padding: 25px;
+      flex: 1 1 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      color: #ff6f61;
+      margin-bottom: 10px;
+    }
+
+    .team {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .team h2 {
+      color: #ff6f61;
+      margin-bottom: 30px;
+    }
+
+    .members {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .member {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 200px;
+      transition: transform 0.3s;
+    }
+
+    .member:hover {
+      transform: scale(1.05);
+    }
+
+    .member img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .member h4 {
+      color: #333;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .highlights {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>About Foodeat</h1>
+    <p class="about-text">
+      Welcome to <strong>Foodeat</strong> — your one-stop solution to discover, order, and enjoy delicious meals from the best restaurants near you. Whether you're craving a cheesy pizza, spicy biryani, or a healthy salad, we've got your taste buds covered. 🌮🍕🥗
+    </p>
+
+    <div class="highlights">
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>To bring happiness to every doorstep by delivering delicious meals swiftly and safely.</p>
+      </div>
+      <div class="card">
+        <h3>Why Choose Us?</h3>
+        <p>Seamless experience, handpicked restaurants, easy tracking, and mind-blowing offers you can’t resist!</p>
+      </div>
+      <div class="card">
+        <h3>24/7 Support</h3>
+        <p>Got a query? We're always here. Day or night, Foodeat is just a tap away. ☎️</p>
+      </div>
+    </div>
+
+    <div class="team">
+      <h2>Meet Our Team</h2>
+      <div class="members">
+        <div class="member">
+          
+          <h4>Vanshita Shivankar</h4>
+          <p>Founder & Developer</p>
+        </div>
+        <!-- Add more members if you like -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
